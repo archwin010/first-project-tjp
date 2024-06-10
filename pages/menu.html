@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../style/footer.css" />
     <link rel="stylesheet" href="../style/menu.css" />
   </head>
+
   <body>
     <!-- MY HEADER TAG GOES HERE -->
     <header></header>
@@ -26,9 +27,7 @@
 
       <!-- MAIN-CONTAINER 1 -->
 
-
       <section class="main-container">
-
         <!-- SNACKY AND SALADY -->
 
         <h2>snacky + salady</h2>
@@ -231,30 +230,37 @@
 
     <!-- MY FOOTER GOES HERE -->
     <footer>
-      <section class="footer-container">
-        <h2 class="footer-h2 footer-signup-h2">
-          sign up for the kismet mailing list
-        </h2>
-        <form action="">
+      <div class="heading">
+        <h4>SIGN UP FOR THE KISMET MAILING LIST</h4>
+
+        <form>
+          <!-- 
+                           The "required" attribute ensures that the user must enter a value in the input field before submitting the form. The "aria-required" attribute is used for accessibility purposes to indicate that the input field is required.
+                       -->
           <input
             type="email"
-            name="email"
-            id="email"
             placeholder="Your email address"
+            required
+            aria-required="true"
+            class="email"
           />
-          <input type="button" value="Join" />
+          <input type="button" value="Join" class="button" />
         </form>
-        <h2 class="footer-h2 footer-rotisserie">
-          <a href="">kismet rotisserie</a>
-        </h2>
-        <p class="footer-copyrights">© 2023 Kismet All Rights Reserved</p>
+      </div>
 
-        <div class="footer-links">
-          <p><a href="">Privacy Policy</a></p>
-          <p><a href="">Terms of use</a></p>
-          <p><a href="">Accessibility</a></p>
+      <div class="local-links">
+        <a href="">
+          <h4>VISIT KISMET ROTISSERIE</h4>
+        </a>
+
+        <p>© 2023 Kismet All Rights Reserved</p>
+
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Accessibility</a>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
