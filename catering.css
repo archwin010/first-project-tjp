@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fad78a;
+    /* margin: 4rem; */
+}
+
+.h1-container {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 350 !important;
+}
+
+.catering-image-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.img_1 {
+    width: 100%;
+}
+
+.order-text {
+    text-align: center;
+}
+
+.h2-container {
+    text-align: center;
+    margin-bottom: 1.9rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+    font-weight: 350 !important;
+}
+
+.h2-p-text {
+    font-size: 1.69rem;
+    font-weight: 300; 
+    letter-spacing: .1rem;
+    line-height: 2.4rem;
+    margin-bottom: 3.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+span {
+    font-weight: 900;
+    color: var(--black);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.h2-p-text.third {
+    margin-bottom: 0.9rem;
+}
+
+.third {
+    font-size: 1rem;
+}
+
+.h2-p-text.four {
+    margin-bottom: 0.3rem;
+    width: 100%;
+}
+
+.form-field {
+    background-color: whitesmoke;
+    border: 2px solid #000;
+    border-radius: 0.6rem;
+    width: 100%;
+    margin: 0 auto 3.7rem auto;
+    padding: 0.5rem 0.7rem ;
+    font-size: 0.9rem;
+}
+
+.form-location {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.col-location {
+    width:  50%;
+    text-align: center;
+}
+
+.col-location.right {
+    margin-left: 0.6rem;
+}
+
+.five {
+    width: 100%;
+    margin: 0;
+}
+
+.form-date {
+    display: flex;
+}
+
+.form-field.w-input {
+    max-width: 20%;
+    margin: 0 0 3.7rem 0;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem 1.25rem 0.7rem
+
+}
+
+.dash {
+    width: 3%;
+    margin: 0 0.6rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 4.5rem;
+}
+
+.h2-p-text.four.calender {
+    font-size: 1rem;
+    width: 16%;
+    margin: 0 0.6rem;
+    line-height: 4.3rem;
+}
+
+.submit {
+    background-color: #e2b4f2;
+    color: white;
+    border: 2px solid #000;
+    border-radius: 0.6rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 0.7rem ;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media screen and (max-width: 675px) {
+    body {
+        margin: 2rem;
+    }
+    .catering-image-container {
+        width: 100%;
+    }
+    .img_1 {
+        width: 100%;
+    }
+    h2 {
+        font-size: 2.8rem;
+    }
+    .h2-p-text {
+        font-size: 1.3rem;
+    }
+    .h2-p-text.third {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    h1, h2 {
+        font-size: 2.3rem;
+    }
+    .h2-p-text {
+        font-size: 1.3rem;
+    }
+    .h2-p-text.four {
+        font-size: 1rem;
+    }
+    .five {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .form-field {
+        font-size: 0.6rem;
+    }
+    .form-field.w-input {
+        font-size: 0.6rem;
+        padding: 0.3rem 0.7rem 1rem 0.7rem;
+    }
+    .dash {
+        font-size: 1rem;
+    }
+    .h2-p-text.four.calender {
+        font-size: 0.7rem;
+        line-height: 4.1rem;
+    }
+
+    @media screen and (max-width: 430px) {
+        body {
+            margin: 1.2rem;
+        }
+        h1, h2 {
+            font-size: 1.8rem;
+        }
+        .h2-p-text {
+            font-size: 1rem;
+        }
+        .h2-p-text.four {
+            font-size: 0.8rem;
+        }
+    }
+
+    @media screen and (max-width: 325px) {
+        h1, h2 {
+            font-size: 1.5rem;
+        }
+        .h2-p-text {
+            font-size: 0.8rem;
+        }
+        .h2-p-text.four {
+            font-size: 0.65rem;
+        }
+        .five {
+            font-size: 0.65rem;
+        }
+    }
+}
