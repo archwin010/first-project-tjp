@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catering</title>
-    <link rel="stylesheet" href="catering.css">
+    <link rel="stylesheet" href="./catering.css" />
+    <link rel="stylesheet" href="./catering-footer.css">
 </head>
+
 <body>
-     <div class="h1-container">
+    <div class="h1-container">
         <h1>CATERING</h1>
-     </div>
-     <div class="catering-image-container">
-        <img class="img_1" src="catering-images/catering-photoshot.jpeg" alt="image">
-     </div>
-     <div class="order-text">
+    </div>
+    <div class="catering-image-container">
+        <img class="img_1" src="catering-images/catering-photoshot.jpeg" alt="image" />
+    </div>
+    <div class="order-text">
         <div class="h2-container">
             <h2>Large Orders + Catering:</h2>
         </div>
-        <p class="h2-p-text">Our availability for offsite events is limited at the moment, but try us! Fill out the info form below to get the conversation started.</p>
-        <p class="h2-p-text second">For small or large pick up/delivery orders from Kismet, call us at <a href=""><span>323 409 0404</span></a>, or from Kismet Rotisserie, please visit <a href=""><span>Rotisserie.</span></a></p>
+        <p class="h2-p-text">
+            Our availability for offsite events is limited at the moment, but try
+            us! Fill out the info form below to get the conversation started.
+        </p>
+        <p class="h2-p-text second">
+            For small or large pick up/delivery orders from Kismet, call us at
+            <a href=""><span>323 409 0404</span></a>, or from Kismet Rotisserie, please visit
+            <a href=""><span>Rotisserie.</span></a>
+        </p>
     </div>
     <div class="form-container">
         <label for="first-name" class="h2-p-text third">*All fields are required.</label>
 
         <label for="Contact" class="h2-p-text four">Primary Contact</label>
-        <input class="form-field" name="Contact" data-name="Contact" type="text" id="Contact" maxlength="256" required>
+        <input class="form-field" name="Contact" data-name="Contact" type="text" id="Contact" maxlength="256"
+            required />
 
         <label for="Email-Address" class="h2-p-text four">Email Address</label>
-        <input class="form-field" name="Email-Address" data-name="Email-Address" type="email" id="Email-Address" maxlength="256" required>
+        <input class="form-field" name="Email-Address" data-name="Email-Address" type="email" id="Email-Address"
+            maxlength="256" required />
 
         <label for="Phone-Number" class="h2-p-text four">Phone</label>
-        <input class="form-field" name="Phone-Number " data-name="Phone-Number" type="tel" id="Phone-Number" maxlength="256"   required>
+        <input class="form-field" name="Phone-Number " data-name="Phone-Number" type="tel" id="Phone-Number"
+            maxlength="256" required />
 
         <label for="Occasion" class="h2-p-text four">Occasion</label>
-        <input class="form-field" name="Occasion" data-name="Occasion" type="text" id="Occasion" maxlength="256" required>
+        <input class="form-field" name="Occasion" data-name="Occasion" type="text" id="Occasion" maxlength="256"
+            required />
 
         <label for="Occasion" class="h2-p-text four">Type of Service</label>
-        <select class="form-field" name="Occasion" data-name="Occasion" type="text" id="Occasion" maxlength="256" required>
+        <select class="form-field" name="Occasion" data-name="Occasion" type="text" id="Occasion" maxlength="256"
+            required>
             <option value="Cocktail Party">Cocktail Party</option>
             <option value="Breakfast Party">Breakfast Party</option>
             <option value="Lunch Party">Lunch Party</option>
@@ -45,82 +60,127 @@
             <option value="other">other</option>
         </select>
 
-                <label for="Budget" class="h2-p-text four">Budget</label>
-                <input class="form-field" name="Budget" data-name="Budget" type="text" id="Budget" maxlength="256" required>
+        <label for="Budget" class="h2-p-text four">Budget</label>
+        <input class="form-field" name="Budget" data-name="Budget" type="text" id="Budget" maxlength="256" required />
 
-                <label for="Address" class="h2-p-text four">Event Location Address</label>
-                <input class="form-field" name="Address" data-name="Address" type="text" id="Address" maxlength="256" required>
+        <label for="Address" class="h2-p-text four">Event Location Address</label>
+        <input class="form-field" name="Address" data-name="Address" type="text" id="Address" maxlength="256"
+            required />
 
         <div class="form-location">
             <div class="col-location">
                 <label for="City" class="h2-p-text four">City</label>
-                <input class="form-field" name="City" data-name="City" type="text" id="City" maxlength="256" required>
+                <input class="form-field" name="City" data-name="City" type="text" id="City" maxlength="256" required />
             </div>
-            <div class=" col-location right">
+            <div class="col-location right">
                 <label for="State" class="h2-p-text four five">State/Province/Region</label>
-                <input class="form-field" name="State" data-name="State" type="text" id="State" maxlength="256" required>
+                <input class="form-field" name="State" data-name="State" type="text" id="State" maxlength="256"
+                    required />
             </div>
         </div>
         <div class="form-location">
             <div class="col-location">
                 <label for="Postal" class="h2-p-text four five">Postal/Zip Code</label>
-                <input class="form-field" name="Postal" data-name="Postal" type="text" id="Postal" maxlength="256" required>
+                <input class="form-field" name="Postal" data-name="Postal" type="text" id="Postal" maxlength="256"
+                    required />
             </div>
-            <div class=" col-location right">
+            <div class="col-location right">
                 <label for="Country" class="h2-p-text four five">Country</label>
-                <input class="form-field" name="Country" data-name="Country" type="text" id="Country" maxlength="256" required>
+                <input class="form-field" name="Country" data-name="Country" type="text" id="Country" maxlength="256"
+                    required />
             </div>
         </div>
         <div>
             <label for="Postal-2" class="h2-p-text four five">Date of Event</label>
             <div class="form-date">
-                <input class="form-field w-input" name="Event Month" data-name="Event Month" type="text" id="Event Month" maxlength="256" placeholder="MM" aria-label="MM" required>
+                <input class="form-field w-input" name="Event Month" data-name="Event Month" type="text"
+                    id="Event Month" maxlength="256" placeholder="MM" aria-label="MM" required />
                 <label for="dash" class="dash">/</label>
 
-                <input class="form-field w-input" name="Event Day" data-name="Event Day" type="text" id="Event Day" maxlength="256" placeholder="DD" aria-label="DD" required>
+                <input class="form-field w-input" name="Event Day" data-name="Event Day" type="text" id="Event Day"
+                    maxlength="256" placeholder="DD" aria-label="DD" required />
                 <label for="dash" class="dash">/</label>
 
-                <input class="form-field w-input" name="Event Year" data-name="Event Year" type="text" id="Event Year" maxlength="256" placeholder="YYYY" aria-label="YYYY" required>
+                <input class="form-field w-input" name="Event Year" data-name="Event Year" type="text" id="Event Year"
+                    maxlength="256" placeholder="YYYY" aria-label="YYYY" required />
                 <label for="calender" class="h2-p-text four calender">(mm/dd/yyy)</label>
             </div>
         </div>
 
-                <label for="Event-Start-Time" class="h2-p-text four">Event Start Time</label>
-                <input class="form-field" name="Event-Start-Time" data-name="Event-Start-Time" type="text" id="Event-Start-Time" maxlength="256" required>
+        <label for="Event-Start-Time" class="h2-p-text four">Event Start Time</label>
+        <input class="form-field" name="Event-Start-Time" data-name="Event-Start-Time" type="text" id="Event-Start-Time"
+            maxlength="256" required />
 
-                <label for="Guest-count" class="h2-p-text four">Guest Count (Estimate)</label>
-                <input class="form-field" name="Guest-count" data-name="Guest-count" type="text" id="Guest-count" maxlength="256" required>
+        <label for="Guest-count" class="h2-p-text four">Guest Count (Estimate)</label>
+        <input class="form-field" name="Guest-count" data-name="Guest-count" type="text" id="Guest-count"
+            maxlength="256" required />
 
         <div class="form-location">
             <div class="col-location">
                 <label for="Guest-Chidren" class="h2-p-text four five">Any guests children?</label>
-                <select class="form-field" name="Guest-Chidren" data-name="Guest-Chidren" type="text" id="Guest-Chidren" maxlength="256" required>
+                <select class="form-field" name="Guest-Chidren" data-name="Guest-Chidren" type="text" id="Guest-Chidren"
+                    maxlength="256" required>
                     <option value="Anoter option">Selection Option</option>
                     <option value="no">No</option>
                     <option value="yes">Yes</option>
                 </select>
             </div>
-            <div class=" col-location right">
+            <div class="col-location right">
                 <label for="Guest-Number" class="h2-p-text four five">if so, how many?</label>
-                <input class="form-field" name="Guest-Number" data-name="Guest-Number" type="text" id="Guest-Number" maxlength="256" required data-gtm-form-interact-field-id="0">
+                <input class="form-field" name="Guest-Number" data-name="Guest-Number" type="text" id="Guest-Number"
+                    maxlength="256" required data-gtm-form-interact-field-id="0" />
             </div>
         </div>
 
-                <label for="dietary-restrictions" class="h2-p-text four">List of dietary restrictions.</label>
-                <input class="form-field" name="dietary-restrictions" data-name="dietary-restrictions." type="text" id="dietary-restrictions" maxlength="256" required>
+        <label for="dietary-restrictions" class="h2-p-text four">List of dietary restrictions.</label>
+        <input class="form-field" name="dietary-restrictions" data-name="dietary-restrictions." type="text"
+            id="dietary-restrictions" maxlength="256" required />
 
-                <label for="dessert" class="h2-p-text four">Interested in dessert?</label>
-                <input class="form-field" name="dessert" data-name="dessert" type="text" id="dessert" maxlength="256" required>
+        <label for="dessert" class="h2-p-text four">Interested in dessert?</label>
+        <input class="form-field" name="dessert" data-name="dessert" type="text" id="dessert" maxlength="256"
+            required />
 
-                <label for="beverages" class="h2-p-text four">Interested in beverages?</label>
-                <input class="form-field" name="beverages" data-name="beverages" type="text" id="beverages" maxlength="256" required>
+        <label for="beverages" class="h2-p-text four">Interested in beverages?</label>
+        <input class="form-field" name="beverages" data-name="beverages" type="text" id="beverages" maxlength="256"
+            required />
 
-                <label for="tell-us-more" class="h2-p-text four">Tell us more about your event.</label>
-                <input class="form-field" name="tell-us-more" data-name="tell-us-more" type="text" id="tell-us-more" maxlength="256" required>
-        
-                <input class="submit" type="submit" data-wait="please-wait..." value="Submit" aria-required="true">
+        <label for="tell-us-more" class="h2-p-text four">Tell us more about your event.</label>
+        <input class="form-field" name="tell-us-more" data-name="tell-us-more" type="text" id="tell-us-more"
+            maxlength="256" required />
 
+        <input class="submit" type="submit" data-wait="please-wait..." value="Submit" aria-required="true" />
     </div>
-    
+
+    <footer>
+        <div class="heading">
+            <h4>SIGN UP FOR THE KISMET MAILING LIST</h4>
+
+            <form>
+                <!-- 
+                            The "required" attribute ensures that the user must enter a value in the input field before submitting the form. The "aria-required" attribute is used for accessibility purposes to indicate that the input field is required.
+                        -->
+                <input type="email" placeholder="Your email address" required aria-required="true" class="email">
+                <input type="button" value="Join" class="button">
+            </form>
+        </div>
+
+        <div class="local-links">
+
+            <a href="">
+                <h4>VISIT KISMET ROTISSERIE</h4>
+            </a>
+
+            <p>
+                © 2023 Kismet All Rights Reserved
+            </p>
+
+            <div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
