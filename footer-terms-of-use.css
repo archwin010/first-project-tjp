@@ -5,12 +5,8 @@ footer {
     font-size: 28px;
 }
 
-a {
-    color: black;
-}
-
-a:visited {
-    color: black;
+footer a {
+    text-decoration: underline;
 }
 
 form {
