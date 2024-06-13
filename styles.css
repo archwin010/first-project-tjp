@@ -59,12 +59,13 @@ nav {
     font-family: sans-serif;
     margin-left: 30px;
 }
-.loving img {
+.round img {
     height: 700px;
 }
-.loving :hover img{
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+.round img:hover {
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    transition: border-radius 0.3s ease-in-out;
 }
 .for a {
    font-size: 50px;
@@ -119,9 +120,9 @@ nav {
     background-color: sandybrown;
     overflow: hidden;
     position: fixed;
-    top: 86%;
+    bottom: 0;
 }
- p {
+.text-wrapper p {
     font-size: 40px;
     text-transform: uppercase;
     white-space: nowrap;
