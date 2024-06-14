@@ -9,6 +9,73 @@ body {
     /* margin: 4rem; */
 }
 
+header {
+    height: 90px;
+    background-color: whitesmoke;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none; 
+    align-items: center;
+    font-size: 30px; 
+    font-weight: 300;
+}
+.nav-link{
+    padding: 28px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-link li a{
+    text-decoration: none;
+    padding: 5px 0;
+    color: #000;
+}
+.about {
+    text-decoration: none; 
+    list-style: none;
+    color: #000; 
+}
+
+.hamburger {
+    display: none;
+}
+
+.text-wrapper {
+    display:flex;
+    justify-content: flex-start;
+    background-color: sandybrown;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+}
+.text-wrapper p {
+    font-size: 40px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 20px 130px;
+    animation: slide-p 20s linear infinite;
+    z-index: 5;
+    top: auto;
+}
+
+@keyframes  slide-p {
+    from{
+transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
 .h1-container {
     text-align: center;
     margin-bottom: 3rem;
@@ -238,5 +305,15 @@ label {
         .five {
             font-size: 0.65rem;
         }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nav {
+      display: none;
+    }
+    .hamburger{
+        display: block;
+        width: 30px;
     }
 }
