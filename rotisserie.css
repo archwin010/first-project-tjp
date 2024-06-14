@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.general-container {
+    background-color: #8796d9;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 2rem;
+    align-items: center;
+}
+
+.hamburger-1, .hamburger-2 {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+}
+
+.h2-container {
+    display: flex;
+    gap: 2rem;
+    margin-right: 18rem;
+    letter-spacing: .1rem;
+}
+
+h2 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding: 0.7rem;
+}
+
+.body-container {
+    background-color: #8796d9;
+    margin-bottom: 3rem;
+}
+
+.h3-container {
+    width: 45%;
+    margin: 6rem auto;
+    border: 3px red;
+}
+
+button {
+    width: 100%;
+    padding: 1.3rem;
+    background: #f9f06d;
+    letter-spacing: .2rem;
+    border: 0;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.image-container-1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem 4rem 2rem;
+    position: relative;
+    
+}
+
+.image-container-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.image-1 {
+    padding-top: 1rem;
+    position: relative;
+
+}
+
+.image-4 {
+    display: none;
+}
+
+.image-2, .image-3, .image-5 {
+    position: relative;
+}
+
+.image-1, .image-2, .image-3, .image-4, .image-5 {
+    width: 30%;
+    line-height: 2rem;
+}
+
+.img_1, .img_2, .img_3, .img_4 {
+    width: 100%;
+    padding-right: 5%;
+}
+
+.img_1:hover, .img_2:hover, .img_3:hover, .img_4:hover {
+    background: #f9f06d;
+}
+
+.buy-now {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 60% 0 58%;
+    position: absolute;
+    top: 0;
+    opacity: 0%;
+}
+
+.buy-now:hover {
+    opacity: 100%;
+    background: rgba(240, 240, 195, 0.25);
+}
+
+h5 {
+    width: 32%;
+    text-align: center;
+    padding: 0.7rem 0.3rem;
+    font-size: 0.85rem;
+    font-weight: 400;
+    background: #f9f06d;
+    opacity: 100%;
+    
+}
+
+h4 {
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-top: 5%;
+    letter-spacing: .1rem;
+}
+
+.h4_p {
+    font-weight: 550;
+}
+
+.menu {
+    display: none;
+}
+
+.h6-container {
+    position: absolute;
+    top: 17%;
+    left: 5.5%;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2.7rem;
+}
+
+@media screen and (max-width: 1020px) {
+    .h2-container {
+        margin-right: 10rem;
+    }
+    .image-container-1 {
+        margin: 0 1.5rem 4rem 1.5rem;
+    }
+    .image-container-2 {
+        justify-content: space-between;
+        margin: 0 1.5rem 4rem 1.5rem;
+
+    }
+    .image-1, .image-2, .image-3, .image-4, .image-5 {
+        width: 44%;
+        line-height: 2rem;
+        gap: 20%;
+    }
+    .image-3 {
+        display: none;
+    }
+    .image-4 {
+        display: flex;
+    }
+    .buy-now.three {
+        position: absolute;
+        width: 48%;
+        top: 87%;
+        left: 0;
+        padding: 30% 0 28%;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .hamburger-1 {
+        display: flex;
+    }
+    .h2-container {
+        display: none;
+    }
+    .h3-container {
+        width: 70%;
+    }
+    .image-1, .image-2, .image-3, .image-4, .image-5 {
+        width: 47%;
+    }
+    h5 {
+        width: 40%;
+        font-size: 0.6rem;
+    }
+    .image-3 {
+        position: relative;
+    }
+    .buy-now.three {
+        top: 62%;
+    }
+    .general-body-container.visible {
+        background: rgba(135, 150, 217, 0.85);
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        height: 100%;
+    }
+    .menu.visible {
+        display: block;
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        top: 0%;
+        background: #8796d9;
+    }
+    .hamburger-1.invisible {
+        display: none;
+    }
+    .hamburger-2.visible {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 3.3%;
+        left: 5.5%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .buy-now.three {
+        top: 62%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .header {
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 1.1rem;
+    }
+    .h3-container {
+        width: 90%;
+    }
+    h4 {
+        font-size: 0.6rem;
+    }
+    .h4_p {
+        font-size: 0.8rem;
+    }
+    .buy-now.three {
+        top: 67%;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .buy-now.three {
+        top: 67%;
+    }
+}
+
+ 
+
+
+
+
+
+
