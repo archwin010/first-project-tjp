@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #fad78a;
+}
+
+footer {
+    margin-top: 10rem;
+}
+
+main {
+    padding: 2rem;
+}
+
 header {
     height: 90px;
     background-color: whitesmoke;
@@ -50,6 +62,7 @@ nav {
     overflow: hidden;
     position: fixed;
     bottom: 0;
+    z-index: 2;
 }
 .text-wrapper p {
     font-size: 40px;
@@ -57,7 +70,6 @@ nav {
     white-space: nowrap;
     padding: 20px 130px;
     animation: slide-p 20s linear infinite;
-    z-index: 5;
     top: auto;
 }
 
@@ -72,9 +84,9 @@ transform: translateX(0);
 
 .first-section {
     width: 100%;
-    background: #fad78a;
+    /* background: #fad78a; */
     padding: 3% 0 2%;
-    position: relative;
+    /* position: relative; */
 }
 
 .grid-container-1 {
@@ -82,7 +94,7 @@ transform: translateX(0);
     display: grid;
     margin: 5% auto 3%;
     grid-template-columns: 28% 45% 27%;
-    grid-template-rows: 19rem 19rem;
+    /* grid-template-rows: 19rem 19rem; */
 }
 
 .grid-item-1 {
@@ -137,7 +149,7 @@ transform: translateX(0);
 
 .second-section {
     width: 100%;
-    background: #fad78a;
+    /* background: #fad78a; */
     padding: 3% 0 0;
 }
 
@@ -175,10 +187,10 @@ transform: translateX(0);
     margin: 0 0 8%;
 }
 
-.third-section {
+/* .third-section {
     width: 100%;
     background: #fad78a;
-}
+} */
 
 .grid-container-3 {
     width: 100%;
@@ -208,9 +220,9 @@ transform: translateX(0);
 
 .group-image {
     display: grid;
-    background: #fad78a;
-    grid-template-columns: 15.5% 15.4% 15.4% 15.5% 15.4% 15.4%;
-    grid-template-rows: 10.3rem 10.4rem 10.4rem;
+    /* background: #fad78a; */
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 2.3% 1.5%;
 }
 
@@ -313,6 +325,15 @@ transform: translateX(0);
 }
 
 @media screen and (max-width: 450px) {
+
+    .nav {
+        display: none;
+    }
+    
+    .hamburger {
+        display: block;
+        width: 30px;
+    }
     .first-section {
         padding: 20% 0 20%;
     }
@@ -462,7 +483,7 @@ transform: translateX(0);
     }
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
     .nav {
       display: none;
     }
@@ -470,4 +491,4 @@ transform: translateX(0);
         display: block;
         width: 30px;
     }
-}
+} */
