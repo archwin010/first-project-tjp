@@ -1,0 +1,133 @@
+
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLE */
+
+:root{
+    /* FONTS */
+    --FS: 1.1rem;
+    --FS-XXL: 2.4rem;
+    --FS-XL: 1.6rem;
+
+
+
+    /* COLOR */
+    --BK-COLOR: #8796d9;
+    --FK-BK-COLOR: ;
+    --FONT-C0LOR: #000;
+    --FONT-COLOR-FOOTER-ROT: #333333;
+
+    /* PADDING */
+    /* --MAIN-PADDING: 5%; */
+    --MAIN-PADDING: 10rem;
+    /* --MAIN-SECT-BOTTOM-PADDING: 20%; */
+    --MAIN-SECT-BOTTOM-PADDING: 5%;
+    --FOOTER-PADDING: 20% 10%;
+    
+}
+
+/* GENERAL STYLE */
+
+/* MAIN CONTENT */
+
+header {
+    height: 90px;
+    background-color: whitesmoke;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none; 
+    align-items: center;
+    font-size: 30px; 
+    font-weight: 300;
+}
+.nav-link{
+    padding: 28px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-link li a{
+    text-decoration: none;
+    padding: 5px 0;
+    color: #000;
+}
+.about {
+    text-decoration: none; 
+    list-style: none;
+    color: #000; 
+}
+
+.hamburger {
+    display: none;
+}
+
+.text-wrapper {
+    display:flex;
+    justify-content: flex-start;
+    background-color: sandybrown;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+}
+.text-wrapper p {
+    font-size: 40px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 20px 130px;
+    animation: slide-p 20s linear infinite;
+    z-index: 5;
+    top: auto;
+}
+
+@keyframes  slide-p {
+    from{
+transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.main-content{
+    background-color: var(--BK-COLOR);
+    text-align: center;
+    padding: var(--MAIN-PADDING);
+}
+
+.main-sect h1{
+    font-size: var(--FS-XXL);
+    margin-bottom: 5%;
+    color: var(--FONT-C0LOR);
+    text-transform: uppercase;
+}
+
+.main-sect h2{
+    font-size: var(--FS-XL);
+    color: var(--FONT-C0LOR);
+    margin-bottom: 3%;
+}
+
+.main-sect p{
+    font-size: var(--FS);
+}
+
+.main-sect p a{
+    color: var(--FONT-C0LOR);
+}
+
+.main-sect{
+    padding-bottom: var(--MAIN-SECT-BOTTOM-PADDING);
+}

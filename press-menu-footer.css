@@ -3,11 +3,7 @@ footer {
     background-color: #f9b36d;
     padding: 32px;
     font-size: 28px;
-<<<<<<<< HEAD:index-footer.css
-    min-height: 52vh;
-========
     min-height: 60vh;
->>>>>>>> e39351119663a1375137aa3077199082971fa176:press-menu-footer.css
 }
 
 a {

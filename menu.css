@@ -1,0 +1,162 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLE */
+
+:root{
+    /* FONTS */
+    --FS: 1.1rem;
+    --FS-XXL: 2.4rem;
+    --FS-XL: 1.6rem;
+
+
+
+    /* COLOR */
+    --BK-COLOR: #8796d9;
+    --FK-BK-COLOR: ;
+    --FONT-C0LOR: #000;
+    --FONT-COLOR-FOOTER-ROT: #333333;
+    --BAK-COLOR-MAIN-CONTENT: #fad78a;
+
+    /* PADDING */
+    --MAIN-PADDING: 5%;
+    --MAIN-SECT-BOTTOM-PADDING: 20%;
+    --FOOTER-PADDING: 20% 10%;
+    
+}
+
+/* GENERAL STYLE */
+
+/* MAIN CONTENT */
+
+header {
+    height: 90px;
+    background-color: whitesmoke;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none; 
+    align-items: center;
+    font-size: 30px; 
+    font-weight: 300;
+}
+.nav-link{
+    padding: 28px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-link li a{
+    text-decoration: none;
+    padding: 5px 0;
+    color: #000;
+}
+.about {
+    text-decoration: none; 
+    list-style: none;
+    color: #000; 
+}
+
+.hamburger {
+    display: none;
+}
+
+.text-wrapper {
+    display:flex;
+    justify-content: flex-start;
+    background-color: sandybrown;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+}
+.text-wrapper p {
+    font-size: 40px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 20px 130px;
+    animation: slide-p 20s linear infinite;
+    z-index: 5;
+    top: auto;
+}
+
+@keyframes  slide-p {
+    from{
+transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.main-content{
+    background-color: var(--BAK-COLOR-MAIN-CONTENT);
+    padding: 10% 5%;
+}
+
+h1{
+    text-transform: uppercase;
+    padding-bottom: 5%;
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 5%;
+    text-transform: uppercase;
+}
+
+.menu-container{
+    text-align: center;
+}
+
+
+.snackynsalady-container, .dishes-container,.ricenbread-container,.sides-container{
+    display: grid;
+    grid-template-columns: 1fr;
+   
+   
+    
+}
+
+.item-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download-link{
+    text-align: center;
+    padding-top: 5%;
+    
+
+}
+
+.download-link a{
+    color: #000000;
+
+}
+
+@media screen  and (min-width:500px) {
+    .snackynsalady-container,.dishes-container,.ricenbread-container,.sides-container{
+        grid-template-columns: repeat(3,1fr);
+        gap: 5%;
+    }
+    .main-container{
+        margin-bottom: 5%;
+    }
+
+    
+
+    
+    
+}
