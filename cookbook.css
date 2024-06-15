@@ -246,6 +246,619 @@
     padding: 22% 0 17%;
 }
 
+@media  screen and (max-width: 1600px) {
+    .first-section {
+        padding: 10% 0 1%;
+    }
+    
+    .grid-container-1 {
+        grid-template-columns: 28% 45% 27%;
+        grid-template-rows: 25.5rem 25.5rem;
+    }
+
+    .animation-image {
+        top: 55%;
+    }
+
+    .second-section {
+        padding: 3% 0 3%;
+    }
+
+    .grid-container-2 {
+        grid-template-columns: 34% 63%;
+        grid-template-rows: 25.5rem 25.5rem;
+    }
+
+    .paragraph-1, .paragraph-2, .paragraph-3 {
+        font-size: 2.5rem;
+        margin:  0 0 5%;
+    }
+
+    .grid-container-3 {
+        grid-template-columns: 8% 84% 8%;
+        grid-template-rows: 43.5rem
+    }
+
+    .group-image {
+        grid-template-columns: 15.5% 15.4% 15.4% 15.5% 15.4% 15.4%;
+        grid-template-rows: 14rem 14rem 14rem;
+    }
+
+    .section-3-left {
+        margin: 25.5rem 0 0;
+    }
+
+    .section-3-right {
+        margin: 15rem 0 0;
+    }
+
+    .order-now {
+        padding: 2% 0 15%
+    }
+}
+
+@media  screen and (max-width: 1362px) {
+    .first-section {
+        padding: 10% 0 1%;
+    }
+    
+    .grid-container-1 {
+        grid-template-columns: 28% 45% 27%;
+        grid-template-rows: 22rem 22rem;
+    }
+
+    .animation-image {
+        top: 52%;
+    }
+
+    .grid-container-2 {
+        grid-template-columns: 34% 63%;
+        grid-template-rows: 22.5rem 22.5rem;
+    }
+
+    .paragraph-1, .paragraph-2, .paragraph-3 {
+        font-size: 2.2rem;
+        margin:  0 0 5%;
+    }
+
+    .grid-container-3 {
+        grid-template-columns: 8% 84% 8%;
+        grid-template-rows: 37.5rem
+    }
+
+    .group-image {
+        grid-template-columns: 15.5% 15.4% 15.4% 15.5% 15.4% 15.4%;
+        grid-template-rows: 12rem 12rem 12rem;
+    }
+
+    .section-3-left {
+        margin: 23.5rem 0 0;
+    }
+
+    .section-3-right {
+        margin: 11.5rem 0 0;
+    }
+
+    .order-now {
+        padding: 2% 0 15%
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .paragraph-1, .paragraph-2, .paragraph-3 {
+        font-size: 2.1rem;
+        margin:  0 0 5%;
+    }
+}
+
+@media  screen and (max-width: 1020px) {
+    .first-section {
+        padding: 7% 0 1%;
+    }
+    
+    .grid-container-1 {
+        grid-template-columns: 28% 45% 27%;
+        grid-template-rows: 16.5rem 16.5rem;
+    }
+
+    .animation-image {
+        top: 52%;
+    }
+    
+    .second-section {
+        padding: 1% 0 5%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .first-section {
+        padding: 24% 0 10%;
+    }
+
+    .grid-container-1 {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 12rem 31.3rem 17rem;
+        gap: 2.3% 0;
+    }
+
+    .grid-item-1 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        text-align: center;
+        padding: 0 0 0 5%;
+    }
+
+    .cookbook-name {
+        width: 45%;
+        padding: 0;
+    }
+
+    .grid-item-2 {
+        grid-column: 1/4;
+        grid-row: 2/-2;
+        display: grid;
+        text-align: center;
+    }
+
+    .grid-item-2-link {
+        width: 75%;
+        justify-self: center;
+    }
+
+    .grid-2-image {
+        width: 65%;
+    }
+
+    .animation-image {
+        width: 19.5%;
+        top: 54.5%;
+        left: 14%;
+    }
+
+    .grid-item-3 {
+        grid-column: 1/4;
+        grid-row: 3/-1;
+        text-align: center;
+    }
+
+    .tour {
+        width: 33%;
+        padding: 1% 0 8%;
+    }
+
+    .details, .order {
+        width: 100%;
+        display: block;
+    }
+
+    .second-section {
+        padding: 5% 0 3%;
+    }
+
+    .grid-container-2 {
+        width: 95%;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: 34% 63%;
+        grid-template-rows: 24rem 15rem;
+        gap: 0 3%;
+    }
+    
+    .grid-item-4 {
+        grid-column: 1/2;
+        grid-row: 1/-1;
+    }
+    
+    .grid4-image-container {
+        width: 100%;
+    }
+    
+    .grid-4-image {
+        width: 100%;
+    }
+    
+    .grid-item-5 {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    .paragraph-1, .paragraph-2 {
+        font-size: 1.7rem;
+    }
+
+    .paragraph-3 {
+        margin: 0;
+        font-size: 1.7rem;
+    }
+
+    .third-section {
+        padding: 3% 0 0;
+        display: grid;
+    }
+
+    .grid-container-3 {
+        width: 85%;
+        display: grid;
+        justify-self: center;
+        grid-template-columns: 8% 84% 8%;
+        grid-template-rows: 45.2rem 45.2rem;
+    }
+
+    .grid-item-left {
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+
+    .section-3-left {
+        margin: 48.2rem 0 0;
+        font-size: 2.2rem;
+        padding: 0 0 2rem;
+    }
+
+    .section-3-right {
+        margin: 36.5rem 0 0;
+        font-size: 2.2rem;
+        padding: 0 0 2.5rem;
+    }
+
+    .grid-item-center {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+
+    .group-image {
+        grid-template-columns: 32.4% 32.4% 32.4%;
+        grid-template-rows: 13.3rem 13.4rem 13.4rem 13.4rem 13.4rem 13.4rem;
+        gap: 2.3% 2%;
+    }
+
+    .hover-label-1 {
+        font-size: 2rem;
+        padding: 18% 0 10%;
+    }
+
+    .hover-label-2 {
+        font-size: 2rem;
+        padding: 22% 0 17%
+    }
+    
+    .grid-item-right {
+        grid-column: 3/-2;
+        grid-row: 4/1;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        margin: 5% auto 0;
+    }
+
+    .copyright-paragraph {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .order-now-container {
+        width: 45%;
+        padding: 6% 0 20%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .first-section {
+        padding: 30% 0 17%;
+    }
+
+    .grid-container-1 {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 12rem 32.2rem 17rem;
+        gap: 5.3% 0;
+    }
+
+    .grid-item-1 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        text-align: center;
+        padding: 0 0 0 5%;
+    }
+
+    .cookbook-name {
+        width: 60%;
+        padding: 0;
+    }
+
+    .grid-item-2 {
+        grid-column: 1/4;
+        grid-row: 2/-2;
+        display: grid;
+        text-align: center;
+    }
+
+    .grid-item-2-link {
+        width: 75%;
+        justify-self: center;
+    }
+
+    .grid-2-image {
+        width: 85%;
+    }
+
+    .animation-image {
+        width: 26.5%;
+        top: 61.5%;
+        left: 2%;
+    }
+
+    .grid-item-3 {
+        grid-column: 1/4;
+        grid-row: 3/-1;
+        text-align: center;
+    }
+
+    .tour {
+        width: 45%;
+        padding: 1% 0 10%;
+    }
+
+    .details, .order {
+        width: 100%;
+        display: block;
+    }
+
+    .second-section {
+        padding: 10% 0 3%;
+    }
+
+    .grid-container-2 {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 60.5rem 35rem;
+        gap: 2.4% 0;
+    }
+
+    .grid-item-4 {
+        grid-column: 1/2;
+        grid-row: 1/-2;
+    }
+
+    .grid-item-5 {
+        grid-column: 2/1;
+        grid-row: 2/2;
+    }
+
+    .paragraph-1, .paragraph-2 {
+        font-size: 1.7rem;
+    }
+
+    .paragraph-3 {
+        margin: 0;
+        font-size: 1.7rem;
+    }
+
+    .grid-container-3 {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 3.5rem 87.5rem 3.5rem;
+        gap: 2% 0;
+        padding: 0 0 8%;
+    }
+
+    .grid-item-left {
+        grid-column: 1/1; 
+        grid-row: 1/2;
+    }
+
+    .section-3-left, .section-3-right {
+        font-size: 2.5rem;
+        text-align: center;
+        transform: rotate(0deg);
+        padding: 2% 0;
+        margin: 0;
+    }
+
+    .grid-item-center {
+        grid-column: 1/3;
+        grid-row: 2/2;
+    }
+
+    .group-image {
+        grid-template-columns: 31.6% 31.6% 31.6%;
+        grid-template-rows: 13.5rem 13..5rem 13.5rem 13.5rem 13.5rem 13.5rem;
+        gap: 1.5% 2.5%;
+    }
+
+    .hover-label-1 {
+        padding: 18% 0 10%;
+    }
+
+    .hover-label-2 {
+        padding: 11% 0 13%;
+    }
+    
+    .grid-item-right {
+        grid-column: 3/-2;
+        grid-row: 3/-1;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        margin: 5% auto 0;
+    }
+
+    .copyright-paragraph {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .order-now-container {
+        width: 45%;
+        padding: 6% 0 20%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .first-section {
+        padding: 30% 0 17%;
+    }
+
+    .grid-container-1 {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 15rem 28rem 19rem;
+        gap: 5.3% 0;
+    }
+
+    .grid-item-1 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        text-align: center;
+        padding: 0 0 0 5%;
+    }
+
+    .cookbook-name {
+        width: 90%;
+        padding: 0;
+    }
+
+    .grid-item-2 {
+        grid-column: 1/4;
+        grid-row: 2/-2;
+        display: grid;
+    }
+
+    .grid-item-2-link {
+        width: 75%;
+        justify-self: center;
+    }
+
+    .grid-2-image {
+        width: 100%;
+    }
+
+    .animation-image {
+        width: 36.5%;
+        top: 59.5%;
+        left: 5%;
+    }
+
+    .grid-item-3 {
+        grid-column: 1/4;
+        grid-row: 3/-1;
+        text-align: center;
+    }
+
+    .tour {
+        width: 65%;
+        padding: 5% 0 15%;
+    }
+
+    .details, .order {
+        width: 100%;
+        display: block;
+    }
+
+    .second-section {
+        padding: 20% 0 3%;
+    }
+
+    .grid-container-2 {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 45rem 47rem;
+        gap: 2.4% 0;
+    }
+
+    .grid-item-4 {
+        grid-column: 1/2;
+        grid-row: 1/-2;
+    }
+
+    .grid-item-5 {
+        grid-column: 2/1;
+        grid-row: 2/2;
+    }
+
+    .paragraph-1, .paragraph-2 {
+        font-size: 1.7rem;
+    }
+
+    .paragraph-3 {
+        margin: 0;
+        font-size: 1.7rem;
+    }
+
+    .grid-container-3 {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 3.5rem 64.3rem 3.5rem;
+        gap: 2% 0;
+        padding: 0 0 8%;
+    }
+
+    .grid-item-left {
+        grid-column: 1/1; 
+        grid-row: 1/2;
+    }
+
+    .section-3-left, .section-3-right {
+        font-size: 2.5rem;
+        text-align: center;
+        transform: rotate(0deg);
+        padding: 2% 0;
+        margin: 0;
+    }
+
+    .grid-item-center {
+        grid-column: 1/3;
+        grid-row: 2/2;
+    }
+
+    .group-image {
+        grid-template-columns: 30.6% 30.6% 30.6%;
+        grid-template-rows: 10rem 10rem 10rem 10rem 10rem 10rem;
+        gap: 1.5% 4%;
+    }
+
+    .hover-label-1 {
+        padding: 18% 0 10%;
+    }
+
+    .hover-label-2 {
+        padding: 11% 0 13%;
+    }
+    
+    .grid-item-right {
+        grid-column: 3/-2;
+        grid-row: 3/-1;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        margin: 5% auto 0;
+    }
+
+    .copyright-paragraph {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .order-now-container {
+        width: 62%;
+        padding: 10% 0 20%;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .first-section {
         padding: 20% 0 20%;
