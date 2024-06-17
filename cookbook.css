@@ -349,6 +349,11 @@
         font-size: 2.1rem;
         margin:  0 0 5%;
     }
+
+    .animation-image {
+        top: 52%;
+        left: 14%;
+    }
 }
 
 @media  screen and (max-width: 1020px) {
