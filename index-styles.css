@@ -1,12 +1,13 @@
-*{
- margin: 0;
- padding: 0;
- box-sizing: border-box;   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* body {
-    width: 100%;
-    position: relative;
-} */
+
+img {
+    max-width: 100%;
+}
+
 header {
     height: 90px;
     background-color: whitesmoke;
@@ -14,115 +15,133 @@ header {
     position: fixed;
     z-index: 1000;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
-    list-style: none; 
+    list-style: none;
     align-items: center;
-    font-size: 30px; 
+    font-size: 30px;
     font-weight: 300;
 }
-.nav-link{
+
+.nav-link {
     padding: 28px 0;
     display: flex;
     justify-content: space-between;
 }
-.nav-link li{
+
+.nav-link li {
     display: inline-block;
     margin: 0 15px;
 }
-.nav-link li a{
+
+.nav-link li a {
     text-decoration: none;
     padding: 5px 0;
     color: #000;
 }
+
 .about {
-    text-decoration: none; 
+    text-decoration: none;
     list-style: none;
-    color: #000; 
+    color: #000;
 }
 
-.hamburger {
+.hamburger, .hamburger-menu {
     display: none;
 }
+
+
 .loving {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background-color: rgb(247, 201, 115);
 }
+
+.loving>div {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
 .loving h2 {
     color: black;
     font-size: 55px;
     font-weight: 500;
     text-align: left;
     font-family: sans-serif;
-    margin-left: 30px;
-}
-.round img {
-    height: 700px;
-}
-.round img:hover {
-    border-top-left-radius: 40%;
-    border-top-right-radius: 40%;
-    transition: border-radius 0.3s ease-in-out;
-}
-.for a {
-   font-size: 50px;
-   font-weight: 500;
-   color: black;
-   text-decoration: none;
-   font-family: bold sans-serif;
-   margin-left: 30px;
-}
-.eat img {
-    filter: invert();
-    height: 10px;
-}
-.eater img{
-    height: 10px; 
 }
 
-.marquee{ 
+.loving :hover img {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.for {
+    padding: 4rem 0rem 5rem 2rem;
+}
+
+.for a {
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    font-family: bold sans-serif;
+    margin-left: 30px;
+    margin-top: 4rem;
+}
+
+.eat,
+.eater {
+    margin: 0 2rem;
+    min-width: 150px;
+}
+
+.eat img {
+    filter: invert();
+    color: #000;
+}
+
+.marquee {
     white-space: nowrap;
-    background-color:  rgb(247, 201, 115);
+    background-color: #f7c973;
     overflow: hidden;
     padding: 60px 0;
     display: flex;
-    justify-content:space-around;
-} 
+    justify-content: space-between;
+}
 
-.marquee-container{
+.marquee-container {
     display: flex;
-    gap: 5rem;
-   align-items: center;
-   height: 70px;
-   animation: 60s slide linear infinite;
+    align-items: center;
+    animation: 60s slide linear infinite;
 }
 
 .marquee-container img {
-    height: 40px;
-    margin: 0 30px;
+    width: 100%;
 }
 
 @keyframes slide {
-   from {
-    transform: translateX(-100%);
-   }
-   to{
-    transform: translateX(0)
-   }
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0)
+    }
 }
 
 .text-wrapper {
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     background-color: sandybrown;
-    overflow: hidden;
     position: fixed;
-    bottom: 0;
+    top: 88%;
 }
-.text-wrapper p {
+
+.every {
     font-size: 40px;
     text-transform: uppercase;
     white-space: nowrap;
@@ -132,11 +151,11 @@ nav {
     top: auto;
 }
 
-@keyframes  slide-p {
-    from{
-transform: translateX(0);
+@keyframes slide-p {
+    from {
+        transform: translateX(0);
     }
-    to{
+    to {
         transform: translateX(-100%);
     }
 }
@@ -145,16 +164,23 @@ transform: translateX(0);
     background-color: #8796d9;
     margin-top: -4px;
 }
+
 .sara {
     display: flex;
-    justify-content: space-around;
-    /* align-items: center; */
+    justify-content: space-between;
 }
+
+.sara>div {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
 .sara img {
-    margin-top: 30px;
     height: 100%;
     width: 50%;
+    margin-top: 30px;
 }
+
 .chefs h2 {
     text-align: left;
     font-family: Favorit, sans-serif;
@@ -163,6 +189,10 @@ transform: translateX(0);
     line-height: 3.8rem;
     margin-top: 30px;
 }
+
+.chefs {
+    margin-left: 30px;
+}
 .modern {
     margin-top: 15px;
     font-family: sans-serif;
@@ -170,20 +200,22 @@ transform: translateX(0);
     font-weight: 400;
     line-height: 2.4rem;
 }
-.chefs h4{
+
+.chefs h4 {
     font-size: 2rem;
-    /* line-height: 1em; */
     font-weight: 400;
     font-family: sans-serif;
     margin-top: 20px;
 }
+
 .come {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     margin-top: 80px;
     padding-left: 30px;
 }
-.cook h2{
+
+.cook h2 {
     text-align: left;
     font-family: Favorit, sans-serif;
     font-size: 3.2rem;
@@ -191,42 +223,189 @@ transform: translateX(0);
     line-height: 3.8rem;
     margin-bottom: 15px;
 }
+
 .cook h3 {
     font-family: sans-serif;
     font-size: 25px;
     font-weight: 400;
     line-height: 2.4rem;
 }
+
 .cook h4 {
     font-size: 2rem;
     font-weight: 400;
     font-family: sans-serif;
-    margin-top: 20px;  
+    margin-top: 20px;
     margin-bottom: 50px;
 }
+
 .come img {
     height: 100%;
-    width: 50%; 
+    width: 50%;
     margin-bottom: 50px;
 }
 
 
 
-@media screen and (max-width: 375px) {
-   /* header {
-display: none;
-   }  */
+@media screen and (max-width: 1080px) {
+
     .nav {
-      display: none;
-    }
-    .hamburger{
-        display: block;
-        width: 30px;
-    }
-    .loving h2{
-        font-size: 40px;
-    }
-    .loving {
+        display: none;
         overflow: hidden;
     }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger img {
+        width: 50px;
+        margin-right: 45px;
+    }
+
+    .marquee {
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 30px 0;
+    }
+
+    .marquee-container {
+        gap: 10rem;
+    }
+
+    .text-wrapper {
+        top: 91%;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .loving h2{
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+    .for {
+        margin-top: 20px;
+    }
+    .round img {
+        object-fit: cover;
+        width: 100%;
+        height: 560px;
+    }
+    .chefs h2 {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+
+}
+@media screen and (max-width: 768px) {
+.loving h2 {
+    font-size: 1.6rem;
+        line-height: 2.4rem;
+        margin-right: auto;
+        padding-top: 10px;
+}
+
+.loving {
+    flex-direction: column-reverse;
+}
+
+.loving img{
+   object-fit: cover;
+   width: 100%;
+   height: 100%; 
+}
+
+.for {
+    padding: 0.5rem 0.5rem;
+    font-size: 20px;
+}
+.for a{
+   font-size: 1.6rem; 
+}
+
+.marquee {
+    white-space: nowrap;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.marquee-container{
+    gap: 4rem;
+}
+
+.eat, .eater{
+    min-width: 100px;
+    color: #000;
+}
+
+    .sara {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .sara img{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+.come{
+    flex-direction: column-reverse;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.come img{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.chefs h2{
+    font-size: 1.7rem;
+        line-height: 2.4rem;
+} 
+.modern {
+    font-size: 1.5rem;
+}
+
+.chefs h4 {
+   font-size: 1.8rem; 
+}
+
+.cook h2 {
+    font-size: 2rem;
+}
+
+.cook h3 {
+    font-size: 1.5rem;
+}
+
+.text-wrapper {
+    top: 92%;
+}
+.hamburger-menu {
+    background-color: #f9a56d;
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.hamburger-menu li, a {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    margin:40px 0;
+   font-size: 30px;
+   margin-left: 10px;
+   font-weight: 100;
+}
+.hamburger-menu{
+    display: none;
+}
+#menu.show{
+display: block;
+}
 }
